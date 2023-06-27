@@ -7,7 +7,7 @@ export default function createIteratorObject(report) {
 
   iterable = {
     *[Symbol.iterator]() {
-      for (const employee of Object.values(report.allEmployees)) {
+      for (const value of Object.values(report.allEmployees)) {
         for (const i of value) {
           yield i;
         }
