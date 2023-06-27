@@ -4,3 +4,4 @@ package-lock.json
 babel.config.js
 *-main.js
 utils.js
+__test__
