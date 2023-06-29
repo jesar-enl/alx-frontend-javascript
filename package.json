@@ -10,6 +10,7 @@
     "dev": "npx babel-node",
     "full-test": ".node_modules/.bin/eslint [0-9]*.js && jest"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jesar-enl/alx-frontend-javascript.git"
