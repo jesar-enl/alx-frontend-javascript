@@ -32,26 +32,26 @@ export default class HolbertonCourse {
   }
 
   // Helper function to verify a string
-  _verifyString(value) {
-    if (typeof value !== 'string') {
+  _verifyString(name) {
+    if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
     }
-    return value;
+    return name;
   }
 
   // Helper function to verify a number
-  _verifyNumber(value) {
-    if (typeof value !== 'number') {
+  _verifyNumber(length) {
+    if (typeof length !== 'number') {
       throw new TypeError('Length must be a number');
     }
-    return value;
+    return length;
   }
 
   // Helper function to verify an array
-  _verifyArray(value) {
-    if (!Array.isArray(value)) {
+  _verifyArray(students) {
+    if (!Array.isArray(students)) {
       throw new TypeError('Students must be an array');
     }
-    return value;
+    return students;
   }
 }
