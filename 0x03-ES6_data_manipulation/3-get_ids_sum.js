@@ -1,5 +1,5 @@
-export default function getStudentIdsSum(getListStudent) {
-  return getListStudent.reduce(
+export default function getStudentIdsSum(getListStudents) {
+  return getListStudents.reduce(
     (accumulator, currrentValue) => accumulator + currrentValue.id,
     0
   );
