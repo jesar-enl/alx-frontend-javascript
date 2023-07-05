@@ -8,10 +8,10 @@ interface Teacher {
 }
 
 const teacher: Teacher = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: 'John',
+  lastName: 'Doe',
   fullTimeEmployee: true,
-  location: "New York",
+  location: 'New York',
   contract: true,
 };
 
@@ -31,3 +31,16 @@ const director: Directors = {
 };
 
 console.log(director);
+
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  const firstLetter = firstName.charAt(0).toUpperCase();
+  const formattedLastName =
+    lastName.charAt(0).toUpperCase() + lastName.slice(1);
+  return `${firstLetter}. ${formattedLastName}`;
+};
+
+console.log(printTeacher('John', 'Doe')); // Output: J. Doe
